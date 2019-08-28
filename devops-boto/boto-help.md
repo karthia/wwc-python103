@@ -22,4 +22,6 @@ Botocore is a low-level interface to a growing number of Amazon Web Services. Bo
 
 Boto3 documentation and installation: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
 
+Note: Examples in this repo are for AWS Lambda. Lambda is an event driven service so it needs handler. For information about Lambda, please read https://docs.aws.amazon.com/lambda/latest/dg/welcome.html
+
 
