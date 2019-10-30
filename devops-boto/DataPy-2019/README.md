@@ -32,5 +32,5 @@ Assumption: We have created IAM roles needed for Lambda function execution. We h
 
 18. You will go back to Designer view.
 19. Now you can try to trigger the Lambda through API Gateway using CURL through in command line
-    - curl -X POST --http1.1 <API Gateway URL>
+    - curl -X POST --http1.1 "Add API Gateway URL from LAMbda function API Gateway section"
 
