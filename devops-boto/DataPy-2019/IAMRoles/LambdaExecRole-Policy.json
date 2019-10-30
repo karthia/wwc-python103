@@ -1,0 +1,46 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "BroadAllows",
+            "Effect": "Allow",
+            "Action": [
+                "autoscaling:*",
+                "cloudwatch:*",
+                "ec2:Describe*",
+                "elasticloadbalancing:*",
+                "iam:PassRole",
+                "iam:CreateServiceLinkedRole",
+                "iam:List*",
+                "iam:Get*",
+                "sts:AssumeRole",
+                "kms:DescribeKey",
+                "kms:List*",
+                "devicefarm:*",
+                "ecs:*",
+                "ecr:*",
+                "events:*",
+                "lambda:*",
+                "logs:*"
+            ],
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Effect": "Allow",
+            "Action": "logs:CreateLogGroup",
+            "Resource": "arn:aws:logs:us-east-1:<Account #>:*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": [
+                "arn:aws:logs:us-east-1:<Account #>:log-group:/aws/lambda/*:*"
+            ]
+        }
+    ]
+}
