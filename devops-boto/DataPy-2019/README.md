@@ -5,6 +5,8 @@
 Assumption: We have created IAM roles needed for Lambda function execution. We have substituted VPC, Subnets and Security groups in the function code. You need to substitute Cluster, ALB and Target Group names.
 
 1. Lambda Service screen (No function)
+<img width="1360" alt="WWC-LambdaScreen" src="https://user-images.githubusercontent.com/53320397/67826779-1119e100-faa4-11e9-9b35-97eab3c7bb8e.png">
+
 2. Click on 'Create Function' button
 3. Enter name for the function
 4. Select Python 3.7 (latest as of today)
@@ -13,6 +15,8 @@ Assumption: We have created IAM roles needed for Lambda function execution. We h
     https://raw.githubusercontent.com/womenwhocoderichmond/wwc-python103/master/devops-boto/DataPy-2019/IAMRoles/LambdaExecRole-Policy.json
 6. Click 'Create'
 7. Lambda function will be created and it will open designer view
+<img width="1312" alt="WWC-LambdaFunction" src="https://user-images.githubusercontent.com/53320397/67826879-6d7d0080-faa4-11e9-8343-bea55f7850d7.png">
+
 8. Go to Code section and paste the code from 
    - https://raw.githubusercontent.com/womenwhocoderichmond/wwc-python103/master/devops-boto/DataPy-2019/FargateLambdas/FGClusterLambda.py
 9. Update Cluster, ALB and TG names in the placeholder. Follow the comments in the program
@@ -24,6 +28,8 @@ Assumption: We have created IAM roles needed for Lambda function execution. We h
 15. Select 'Create New API' in the drop down for API
 16. Select 'Open' for Security. Caution: In production, you should confure with security
 17. Click 'Add'
+<img width="857" alt="WWC-APITrigger" src="https://user-images.githubusercontent.com/53320397/67827007-dd8b8680-faa4-11e9-82b2-a76b12d713e8.png">
+
 18. You will go back to Designer view.
 19. Now you can try to trigger the Lambda through API Gateway using CURL through in command line
     - curl -X POST --http1.1 <API Gateway URL>
