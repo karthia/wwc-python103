@@ -20,11 +20,11 @@ def lambda_handler(event, context):
     if "challenge" in event:
         return event["challenge"]
     else:
-        return "200 OK"
-    #return {
-    #    'statusCode': 200,
-    #    'body': json.dumps('Hello from Lambda!')
-    #}
+        #return "200 OK"
+        return {
+            'statusCode': 200,
+            'body': json.dumps('Hello from Lambda!')
+            }
 
 #Cluster Creation
 def create_wwc_cluster():
