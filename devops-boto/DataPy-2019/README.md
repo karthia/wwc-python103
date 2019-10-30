@@ -20,5 +20,11 @@ Assumption: We have created IAM roles needed for Lambda function execution. We h
 11. Click on the 'Test' button and create test event by giving Event Name. Click 'Create'
 12. CLick on 'Test' again to test the lambda code. It will create Cluster, ALB and Targetgroup.
 13. Open Cluster, ALB and Target Group in other tabs and verify if resources are created.
-14. 
+14. Click on 'Add Trigger' and select 'API Gateway'
+15. Select 'Create New API' in the drop down for API
+16. Select 'Open' for Security. Caution: In production, you should confure with security
+17. Click 'Add'
+18. You will go back to Designer view.
+19. Now you can try to trigger the Lambda through API Gateway using CURL through in command line
+    - curl -X POST --http1.1 <API Gateway URL>
 
