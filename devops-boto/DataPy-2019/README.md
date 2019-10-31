@@ -47,7 +47,7 @@ Docker image is managed in AWS ECR. We use already existing image. We have used 
 2. Click 'Create Function' button and create function for service as mentioned in the Cluster section
 3. Lambda designer view will open
 4. Paste service code from the link in the code section
-   - xxxxxx
+   - https://raw.githubusercontent.com/womenwhocoderichmond/wwc-python103/master/devops-boto/DataPy-2019/FargateLambdas/FGServiceLambda.py
 5. Please substitute values as mentioned in the code
 6. Click 'Save'
 7. Click 'Test', create Test Event and test the function (as you did in the Cluster section.
@@ -65,7 +65,7 @@ Docker image is managed in AWS ECR. We use already existing image. We have used 
 
 ## Web Application:
 We have used NGINX server and simpler HTML application. Please refer to the Dockerfile and application detail here
-- ......
+- https://github.com/womenwhocoderichmond/wwc-python103/tree/master/devops-boto/DataPy-2019/WebApp
 
 ## ECR repository creation and Image push:
 ###Prerequisite:
