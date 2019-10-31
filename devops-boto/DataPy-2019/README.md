@@ -58,7 +58,7 @@ Docker image is managed in AWS ECR. We use already existing image. We have used 
 12. From decription tab, look for ALB and click to open in another tab.
 13. In ALB screen, go to listener tab. You will see newly created target group is a high priority one to which traffic is forwarded. This is the one pointing to the docker image (web application) that we deployed
 14. Validate if you are able to access the web application through ALB
-    - http://Substitute your ALB DNS from ALB screen:8080/index.html
+    - http:// substitute your ALB DNS from ALB screen:8080/index.html
 15. Now, all are looking good. Go to ALB > Listener, delete the TG listener that we created. Go To TG, delete the TG that we created. Go to ECS and delete the service (NOT the cluster).
 16. Now create API gateway like we created for cluster.
 17. You can trigger service creation and deployment using CURL from command line or Mac terminal.
