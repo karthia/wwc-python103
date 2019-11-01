@@ -68,7 +68,7 @@ We have used NGINX server and simpler HTML application. Please refer to the Dock
 - https://github.com/womenwhocoderichmond/wwc-python103/tree/master/devops-boto/DataPy-2019/WebApp
 
 ## ECR repository creation and Image push:
-###Prerequisite:
+### Prerequisite:
    Need Docker desktop and AWS CLI to create image and push the image to ECR. Need Credentials (Access Key ID and Access key) for your IAM user. Create token again and save it.
    IAM user's policy needs ecr:GetAuthorizationToken access to allow user to push image into ECR from local.
 
